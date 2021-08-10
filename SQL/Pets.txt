@@ -1,0 +1,15 @@
+CREATE TABLE dogs (
+   id INTEGER NOT NULL PRIMARY KEY,
+   name VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE cats (
+   id INTEGER NOT NULL PRIMARY KEY,
+   name VARCHAR(50) NOT NULL
+);
+
+Task: "Write a query that select all distinct pet names."
+
+SELECT name FROM dogs
+UNION
+SELECT name FROM cats;
